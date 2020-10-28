@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TasksGen">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:gravity="center"
+        >
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+      android:src="@drawable/taskimg"
+        android:background="#fff7a5"
+        android:id="@+id/taskicon"
+        />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="Add A Task"
+            android:id="@+id/task"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Done"
+    android:background="#fff7a5"
+    android:id="@+id/btnDone"
+
+    />
+
+
+</RelativeLayout>

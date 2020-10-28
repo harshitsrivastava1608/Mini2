@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadPdf">
+
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="50dp"
+      android:id="@+id/imgCateg"
+      android:hint="Enter The Title"
+      android:textAlignment="center"
+      />
+
+    <ImageButton
+        android:id="@+id/gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgCateg"
+        android:src="@drawable/taskimg"
+        android:layout_centerHorizontal="true"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="No File selected"
+      android:gravity="center"
+      android:layout_centerHorizontal="true"
+      android:textSize="16sp"
+      android:id="@+id/pdfTextView"
+      android:layout_below="@+id/gallery"
+      />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:layout_marginTop="50dp"
+       android:layout_centerInParent="true"
+        android:layout_below="@id/gallery"
+        android:id="@+id/uploadImg"/>
+
+
+
+</RelativeLayout>
